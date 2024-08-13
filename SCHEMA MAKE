@@ -1,0 +1,34 @@
+{
+  "name": "agendar_reunion_make",
+  "description": "Envía datos básicos de una reunión a Make para agendar en Google Calendar",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "fecha_hora": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Fecha y hora de la reunión (formato ISO 8601, ej: 2024-06-30T09:00:00Z)"
+      },
+      "correo_electronico": {
+        "type": "string",
+        "format": "email",
+        "description": "Correo electrónico del participante"
+      },
+      "nombre": {
+        "type": "string",
+        "description": "Nombre del participante"
+      },
+      "numero_telefono": {
+        "type": "string",
+        "description": "Número de teléfono del participante"
+      }
+    },
+    "required": [
+      "fecha_hora",
+      "correo_electronico",
+      "nombre",
+      "numero_telefono"
+    ]
+  }
+}
