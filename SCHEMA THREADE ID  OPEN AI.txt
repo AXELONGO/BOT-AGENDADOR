@@ -1,0 +1,11 @@
+THEARD ID SCHEMA:
+{
+  "name": "threadId",
+  "description": "ID del hilo del asistente de OpenAI.",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

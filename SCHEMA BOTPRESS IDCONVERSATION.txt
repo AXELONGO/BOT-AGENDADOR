@@ -1,0 +1,19 @@
+SCHEMA CONVERSACION ID BOTPRESS:
+
+{
+  "name": "getConversationId",
+  "description": "Extracts the conversation ID from a Botpress event",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "conversationId": {
+        "type": "string",
+        "description": "The ID of the conversation in Botpress"
+      }
+    },
+    "required": [
+      "conversationId"
+    ]
+  }
+}
